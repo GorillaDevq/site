@@ -1,0 +1,63 @@
+.button {
+  @include button-reset;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.navigate, .navigate_active {
+  padding: 15px 20px;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  border-radius: 51px;
+}
+
+.navigate_active {
+  background: $font-color-t;
+  color: #fff;
+  transition: background 0.3s;
+  box-sizing: border-box;
+
+  &:hover {
+    background: #F086A6;
+  }
+
+  &:active {
+    color: $font-color-t;
+    background: #fff;
+    border: 1px solid $font-color-t;
+  }
+}
+
+.white, .white_active {
+  font-size: 18px;
+  line-height: 22px;
+  box-sizing: border-box;
+  font-weight: 500;
+  background: #fff;
+  border-radius: 51px;
+  padding: 14px 20px;
+}
+
+.white_active {
+  border: 1px solid $font-color-t;
+  color: $font-color-t;
+}
+
+@include desktop-screen {
+  .navigate, .navigate_active {
+    border-radius: 10px;
+  }
+}
+
+.ellipse {
+  border-radius: 51px;
+}
+
+.inverted {
+  font-size: 20px;
+  line-height: 24px;
+  padding: 10px 20px;
+  color: $font-color-t;
+  background: #fff;
+  border-radius: 10px;
+}

@@ -1,0 +1,33 @@
+.halls {
+  width: 100vw;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 90.7%;
+  justify-content: center;
+  margin: -40px 0 -40px -4.9%;
+  padding: 40px 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__title {
+    @include font-title($additional: true);
+    margin: 0;
+    letter-spacing: -1px;
+  }
+
+  &__list {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  &__cherry {
+    width: 100%;
+    aspect-ratio: 1/0.565;
+  }
+}

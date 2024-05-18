@@ -1,0 +1,15 @@
+.content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: $mobile-width;
+  justify-content: center;
+  row-gap: 80px;
+  box-sizing: border-box;
+}
+
+@include desktop-screen {
+  .content {
+    grid-template-columns: $desktop-width;
+    row-gap: 160px;
+  }
+}

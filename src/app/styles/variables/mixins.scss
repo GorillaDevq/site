@@ -1,0 +1,114 @@
+//Шрифты
+@mixin font-title($additional: false) {
+  font-family: $font-family-title;
+  font-size: $font-size-t;
+  line-height: $font-line-t;
+
+  @if $additional {
+    color: $font-color-t;
+    font-weight: $font-weight-t;
+  }
+
+  letter-spacing: -1px;
+}
+
+@mixin font-title-small {
+  font-size: $font-size-t-small;
+  line-height: $font-line-t-small;
+}
+
+@mixin font-title-large {
+  font-size: $font-size-t-large;
+  line-height: $font-line-t-large;
+}
+
+@mixin font-paragraph {
+  font-family: $font-family-paragraph;
+  font-size: $font-size-p;
+  line-height: $font-line-p;
+  letter-spacing: -0.5px;
+}
+
+@mixin font-paragraph-large {
+  font-size: $font-size-p-large;
+  line-height: $font-line-p-large;
+}
+
+@mixin font-paragraph-small {
+  font-size: $font-size-p-small;
+  line-height: $font-line-p-small;
+}
+
+@mixin font-subtitle {
+  font-family: $font-family-paragraph;
+  font-size: $font-size-s;
+  line-height: $font-line-s;
+}
+
+
+//Ресеты дефолтных стилей
+@mixin button-reset {
+  border: none;
+  background: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin input-reset {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+
+//Миксины для чекбоксов
+@mixin checkbox-statics-form {
+  position: relative;
+  border-radius: 10px;
+  padding: 2px 10px;
+  box-sizing: border-box;
+  background: #EBEBF0;
+  @include center-content;
+}
+
+
+@mixin label-absolute {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  @include center-content;
+}
+
+
+//Мисксины для оцентровки
+@mixin center-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+//Миксины медиа
+@mixin small-screen() {
+  @media screen and (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin desktop-screen() {
+  @media screen and (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}

@@ -1,0 +1,44 @@
+.checkbox {
+  @include checkbox-statics-form;
+  width: 74px;
+  min-height: 38px;
+
+  &__input {
+    position: absolute;
+    visibility: hidden;
+
+    &:checked ~ .checkbox__label:after {
+      transform: translateX(calc(100% + 2px));
+    }
+  }
+
+  &__label {
+    @include label-absolute;
+
+    &:after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      bottom: 2px;
+      width: 34px;
+      height: 34px;
+      background-color: #fff;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+  }
+
+  &__logo {
+    z-index: 1;
+
+    &:first-of-type {
+      padding-left: 8px;
+    }
+
+    &:last-of-type {
+      padding-right: 8px;
+    }
+  }
+}

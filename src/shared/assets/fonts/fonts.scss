@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('shared/assets/fonts/Inter-Regular.eot');
+  src: local('Inter Regular'), local('Inter-Regular'),
+    url('shared/assets/fonts/Inter-Regular.eot') format('embedded-opentype'),
+    url('shared/assets/fonts/Inter-Regular.woff2') format('woff2'),
+    url('shared/assets/fonts/Inter-Regular.woff') format('woff'),
+    url('shared/assets/fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('shared/assets/fonts/Inter-Medium.eot');
+  src: local('Inter Medium'), local('Inter-Medium'),
+    url('shared/assets/fonts/Inter-Medium.eot') format('embedded-opentype'),
+    url('shared/assets/fonts/Inter-Medium.woff2') format('woff2'),
+    url('shared/assets/fonts/Inter-Medium.woff') format('woff'),
+    url('shared/assets/fonts/Inter-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('shared/assets/fonts/Inter-SemiBold.eot');
+  src: local('Inter Semi Bold'), local('Inter-SemiBold'),
+    url('shared/assets/fonts/Inter-SemiBold.eot') format('embedded-opentype'),
+    url('shared/assets/fonts/Inter-SemiBold.woff2') format('woff2'),
+    url('shared/assets/fonts/Inter-SemiBold.woff') format('woff'),
+    url('shared/assets/fonts/Inter-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('shared/assets/fonts/Inter-Bold.eot');
+  src: local('Inter Bold'), local('Inter-Bold'),
+    url('shared/assets/fonts/Inter-Bold.eot') format('embedded-opentype'),
+    url('shared/assets/fonts/Inter-Bold.woff2') format('woff2'),
+    url('shared/assets/fonts/Inter-Bold.woff') format('woff'),
+    url('shared/assets/fonts/Inter-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('shared/assets/fonts/Inter-ExtraBold.eot');
+  src: local('Inter Extra Bold'), local('Inter-ExtraBold'),
+    url('shared/assets/fonts/Inter-ExtraBold.eot') format('embedded-opentype'),
+    url('shared/assets/fonts/Inter-ExtraBold.woff2') format('woff2'),
+    url('shared/assets/fonts/Inter-ExtraBold.woff') format('woff'),
+    url('shared/assets/fonts/Inter-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('shared/assets/fonts/Inter-Black.eot');
+  src: local('Inter Black'), local('Inter-Black'),
+    url('shared/assets/fonts/Inter-Black.eot') format('embedded-opentype'),
+    url('shared/assets/fonts/Inter-Black.woff2') format('woff2'),
+    url('shared/assets/fonts/Inter-Black.woff') format('woff'),
+    url('shared/assets/fonts/Inter-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("shared/assets/fonts/Inter-Regular.woff2") format("woff2"),
+    url("shared/assets/fonts/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("shared/assets/fonts/Inter-Bold.woff2") format("woff2"),
+    url("shared/assets/fonts/Inter-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("shared/assets/fonts/Inter-Black.woff2") format("woff2"),
+    url("shared/assets/fonts/Inter-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('shared/assets/fonts/Roboto-Regular.eot');
+  src: local('Roboto'), local('Roboto'),
+    url('shared/assets/fonts/Roboto-Regular.eot') format('embedded-opentype'),
+    url('shared/assets/fonts/Roboto-Regular.woff') format('woff'),
+    url('shared/assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Travels';
+  src: url('shared/assets/fonts/TTTravels-DemiBold.eot');
+  src: local('TT Travels DemiBold'), local('TTTravels-DemiBold'),
+    url('shared/assets/fonts/TTTravels-DemiBold.eot') format('embedded-opentype'),
+    url('shared/assets/fonts/TTTravels-DemiBold.woff2') format('woff2'),
+    url('shared/assets/fonts/TTTravels-DemiBold.woff') format('woff'),
+    url('shared/assets/fonts/TTTravels-DemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}

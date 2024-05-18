@@ -1,0 +1,9 @@
+.title {
+  @include font-title($additional: true);
+}
+
+@include desktop-screen {
+  .title {
+    @include font-title-large;
+  }
+}

@@ -1,0 +1,42 @@
+.statics {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__subtitle {
+    margin: 10px 0 0 0;
+  }
+
+  &__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 54px;
+  }
+}
+
+
+@include desktop-screen {
+  .statics {
+
+    &__title {
+      text-align: center;
+    }
+
+    &__subtitle {
+      max-width: 730px;
+      text-align: center;
+      align-self: center;
+    }
+
+    &__button {
+      width: 190px;
+      align-self: center;
+    }
+  }
+
+}

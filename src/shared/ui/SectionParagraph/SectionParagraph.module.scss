@@ -1,0 +1,9 @@
+.paragraph {
+  @include font-paragraph;
+}
+
+@include desktop-screen {
+  .paragraph {
+    @include font-paragraph-large;
+  }
+}

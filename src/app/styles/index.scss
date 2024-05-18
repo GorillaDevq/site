@@ -1,0 +1,32 @@
+/*Link Normalize*/
+@import './normalize';
+
+/*Link Fonts*/
+@import "shared/assets/fonts/fonts.scss";
+
+/*Link App*/
+.app {
+  background-color: $bg-color;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: $mobile-width;
+  justify-content: center;
+  row-gap: 80px;
+  box-sizing: border-box;
+}
+
+@include desktop-screen {
+  .content {
+    grid-template-columns: $desktop-width;
+    row-gap: 160px;
+  }
+}

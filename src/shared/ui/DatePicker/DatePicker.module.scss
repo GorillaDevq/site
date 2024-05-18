@@ -1,0 +1,84 @@
+.date {
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: $bg-color;
+  cursor: pointer;
+  position: relative;
+
+  &__container {
+    padding: 6px 12px;
+    border: 2px solid $bg-color;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    &:hover {
+      border: 2px solid black;
+    }
+
+    &:before {
+      display: block;
+      content: '';
+      width: 16px;
+      height: 16px;
+      background-image: url("shared/assets/icons/Date.svg");
+      position: absolute;
+      left: 12px;
+      top: 10px;
+    }
+
+    &:after {
+      display: block;
+      content: '';
+      width: 24px;
+      height: 24px;
+      background-image: url("shared/assets/icons/arrow_to_open.svg");
+      position: absolute;
+      right: 12px;
+      top: 6px;
+    }
+  }
+
+  &__current {
+    padding: 0 0 0 24px;
+  }
+
+  &__list {
+    @include list-reset;
+    position: absolute;
+    width: 100%;
+    background: $bg-color;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+    &_active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__item {
+    padding: 4px;
+    display: flex;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    &:hover {
+      border: 1px solid black;
+    }
+  }
+}
+
+
+@include desktop-screen {
+  .date {
+
+    &__list {
+      width: 120%;
+      left: -10%;
+    }
+  }
+}
