@@ -1,52 +1,4 @@
-//Шрифты
-@mixin font-title($additional: false) {
-  font-family: $font-family-title;
-  font-size: $font-size-t;
-  line-height: $font-line-t;
-
-  @if $additional {
-    color: $font-color-t;
-    font-weight: $font-weight-t;
-  }
-
-  letter-spacing: -1px;
-}
-
-@mixin font-title-small {
-  font-size: $font-size-t-small;
-  line-height: $font-line-t-small;
-}
-
-@mixin font-title-large {
-  font-size: $font-size-t-large;
-  line-height: $font-line-t-large;
-}
-
-@mixin font-paragraph {
-  font-family: $font-family-paragraph;
-  font-size: $font-size-p;
-  line-height: $font-line-p;
-  letter-spacing: -0.5px;
-}
-
-@mixin font-paragraph-large {
-  font-size: $font-size-p-large;
-  line-height: $font-line-p-large;
-}
-
-@mixin font-paragraph-small {
-  font-size: $font-size-p-small;
-  line-height: $font-line-p-small;
-}
-
-@mixin font-subtitle {
-  font-family: $font-family-paragraph;
-  font-size: $font-size-s;
-  line-height: $font-line-s;
-}
-
-
-//Ресеты дефолтных стилей
+//Ресеты дефолтных стилей;
 @mixin button-reset {
   border: none;
   background: none;
@@ -102,13 +54,13 @@
 
 //Миксины медиа
 @mixin small-screen() {
-  @media screen and (max-width: $breakpoint-mobile) {
+  @media screen and (max-width: 1024px) {
     @content;
   }
 }
 
 @mixin desktop-screen() {
-  @media screen and (min-width: $breakpoint-desktop) {
+  @media screen and (min-width: 1024px) {
     @content;
   }
 }

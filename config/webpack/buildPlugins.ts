@@ -10,9 +10,8 @@ export default function buildPlugins({ paths, isDev }: BuildOptions): webpack.We
     new CleanWebpackPlugin(),
     new HTMLWebpackPlugin({
       template: paths.html,
-      favicon: "src/shared/assets/favicon/favicon.svg"
+      favicon: "src/shared/assets/favicon/favicon.ico"
     }),
-    // Для того, чтобы в проде CSS сжать
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash:8].css',
       chunkFilename: 'css/[name].[contenthash:8].css',
@@ -21,10 +20,6 @@ export default function buildPlugins({ paths, isDev }: BuildOptions): webpack.We
       __IS_DEV__: JSON.stringify(isDev),
     }),
   ];
-
-  if (isDev) {
-      //TODO: @pmmmwh/react-refresh-webpack-plugin
-  }
 
   return plugins;
 }

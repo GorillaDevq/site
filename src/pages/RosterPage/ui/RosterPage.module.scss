@@ -1,0 +1,21 @@
+.staff {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+
+    &__title {
+        margin: 0;
+        font-size: 50px;
+        color: rgb(255, 228, 122);
+        text-align: center;
+    }
+
+    &__list {
+        @include list-reset;
+        display: grid;
+        padding: 0 20px;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    }
+
+}

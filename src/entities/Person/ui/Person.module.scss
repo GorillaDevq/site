@@ -1,59 +1,41 @@
 .person {
-  width: 100%;
-  min-height: 548px;
-  background-size: cover;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  &_ceo {
-    background: #BEE7FB url("shared/assets/images/Person-first.png") no-repeat right bottom;
-  }
-
-  &_cio {
-    background: #F8CCC9 url("shared/assets/images/Person-second.png") no-repeat right bottom;
-  }
-
-  &_chief {
-    background: #E4EB9D url("shared/assets/images/Person-third.png") no-repeat right bottom;
-  }
-
-  &__description {
-    padding: 20px;
-    font-family: $font-family-title;
-    color: #5D4893;
-  }
-
-  &__name {
-    margin: 0;
-    font-size: 40px;
-    line-height: 38px;
-    letter-spacing: -1px;
-  }
-
-  &__position {
-    margin: 10px 0 0 0;
-    font-size: 24px;
-    line-height: 23px;
-    letter-spacing: -0.5px;
-  }
-
-  &__quote {
-    @include font-paragraph;
-    margin: 10px;
-    padding: 10px;
-    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
     border-radius: 10px;
-    opacity: 0.8;
-    min-height: 96px;
-    box-sizing: border-box;
-    letter-spacing: -0.5px;
-  }
-}
+    padding: 20px;
+    background: #007261;
+    transition: all 0.3s ease-in-out;
 
-@include small-screen {
-  .person {
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+    }
 
-  }
+    &__avatar {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        object-fit: cover;
+    }
+
+    &__name {
+        margin: 0;
+        color: rgb(255, 228, 122);
+        text-align: center;
+        line-height: 30px;
+    }
+
+    &__sport,&__rank  {
+        margin: 0;
+        color: white;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    &__sport {
+        white-space: nowrap;
+    }
 }

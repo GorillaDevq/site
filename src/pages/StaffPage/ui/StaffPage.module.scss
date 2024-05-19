@@ -1,0 +1,62 @@
+.staff {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+
+    &__title {
+        margin: 0;
+        font-size: 50px;
+        color: rgb(255, 228, 122);
+        text-align: center;
+    }
+
+    &__list {
+        @include list-reset;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    &__person {
+        background: #007261;
+        border-radius: 10px;
+        padding: 30px;
+        display: flex;
+        column-gap: 20px;
+    }
+
+    &__avatar {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        object-fit: cover;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__name {
+        font-size: 24px;
+        color: rgb(255, 228, 122);
+        margin: 0;
+    }
+
+    &__sport {
+        font-size: 20px;
+        color: white;
+        line-height: 24px;
+    }
+
+    &__ranks {
+        @include list-reset;
+        list-style: square;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        color: white;
+    }
+}
